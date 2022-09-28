@@ -44,10 +44,6 @@ fn main() -> io::Result<()> {
     while let Some(line) = stdin.next() {
         let last = line.unwrap();
 
-        if last.len() == 0 {
-            break;
-        }
-
         let index = patterns.iter().enumerate()
             .find_map(|(i, r)| {
                 r.is_match(&last).then_some(i)
