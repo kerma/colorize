@@ -8,7 +8,7 @@ Supported colors: red (default), blue, green, yellow, purple, cyan, black, white
 Patterns and colors can be specifed more than once to use multiple lines. Eg:
 
 ```sh
-	colorize -p error -c yellow -p debug -c green
+$ colorize -p error -c yellow -p debug -c green
 ```
 
 
@@ -34,4 +34,5 @@ OPTIONS:
 
 - [ ] input color validation 
 - [ ] bold for matched groups
+- [ ] truecolor (rgb) support 
 - [ ] action for release
